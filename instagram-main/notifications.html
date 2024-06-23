@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="msg.css">
+    <title>Message</title>
+</head>
+<body>
+<div class="msg">
+    <section class="navbar">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href="index.html"><i class='bx bxs-home'></i></a>
+            <a href="#"><i class='bx bx-search-alt-2'></i></a> 
+            <a href="message.html"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#"><i class='bx bx-plus'></i></a>
+            <a href="reels.html"><i class="far fa-compass"></i></a>
+            <a href="notifications.html"><i class="far fa-heart"></i></a>
+            <a href="profile.html"><img src="image/mine.JPEG" alt="image"></a>
+            <div class="menu">
+                <a><i class="fas fa-bars"></i></a>
+            </div>
+        </nav>
+    </section>
+    <section class="profile">
+        <div class="notification-container">
+            <h3>Notifications</h3>
+            <div class="notification-users-container">
+                <div class="notification">
+                    <img src="image/download (3).jfif" alt="User 1">
+                    <div class="content">
+                        <h3>Moley</h3>
+                        <p>followed you <span>24m</span></p>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <img src="image/download (1).jfif" alt="User 2">
+                    <div class="content">
+                        <h3>Jessi</h3>
+                        <p>liked your post <span>32m</span></p>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <img src="image/download (2).jfif" alt="User 3">
+                    <div class="content">
+                        <h3>Pugun</h3>
+                        <p>followed you <span>53m</span></p>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <img src="image/download (4).jfif" alt="User 4">
+                    <div class="content">
+                        <h3>Tae</h3>
+                        <p>liked your post <span>3h</span></p>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <img src="image/download (5).jfif" alt="User 5">
+                    <div class="content">
+                        <h3>Minyu</h3>
+                        <p>followed you <span>8h</span></p>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <img src="image/download (3).jfif" alt="User 5">
+                    <div class="content">
+                        <h3>Aadhi</h3>
+                        <p>liked your story <span>.22h</span></p>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <img src="image/download (1).jfif" alt="User 5">
+                    <div class="content">
+                        <h3>Moley</h3>
+                        <p>Reply to your post <span>24h</span></p>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <img src="image/download (2).jfif" alt="User 5">
+                    <div class="content">
+                        <h3>Bears doll</h3>
+                        <p>liked your story <span>2d</span></p>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <img src="image/download (6).jfif" alt="User 6">
+                    <div class="content">
+                        <h3>Alex</h3>
+                        <p>liked your post <span>3d</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-nav"> 
+        <nav>
+           <a href="index.html"><i class='bx bxs-home'></i></a>
+           <a href="message.html"><i class="fa-brands fa-facebook-messenger"></i></a>
+           <a href="#"><i class='bx bx-plus'></i></a>
+           <a href="reels.html"><i class="fa-regular fa-compass"></i></a>
+           <a href="notifications.html"><i class="fa-regular fa-heart"></i></a>
+           <a href="profile.html"><img src="image/mi" alt="image"></a>
+       </nav>
+   </div>
+</div>
+</div>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif ;
+        background-color: #fff; /* White background */
+        color: #000; /* Black text */
+    }
+
+    .msg {
+        display: flex;
+        width: 100%;
+        margin: 0;
+    }
+
+    .navbar {
+        width: 10vw;
+        border-right: 1px solid rgba(219, 219, 219, 1);
+        padding: 1rem;
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar .logo {
+        margin-bottom: 1rem;
+    }
+
+    .profile {
+        width: 32vw;
+        padding: 1rem;
+        border-right: 1px solid rgba(219, 219, 219, 1);
+        border-radius: 0.3rem;
+    }
+
+    .notification-container {
+        padding: 1rem;
+    }
+
+    .notification-container h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .notification-users-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .notification {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .notification img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+
+    .notification .content {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .notification .content h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .notification .content p {
+        font-size: 1rem;
+        margin: 0;
+        color: black; 
+    }
+
+    .notification .content span {
+        color: grey;
+    }
+
+    .follow-btn {
+        background-color: rgb(33, 177, 235); /* Sky blue button */
+        color: white;
+        border: none;
+        border-radius: 0.3rem;
+        padding: 0.3rem 0.6rem;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+
+    @media (max-width:1200px){
+
+        .profile{
+            width: 42%;
+        }
+    }
+
+    
+    @media (max-width: 895px) {
+    .navbar {
+        width: 15vw;  
+    }
+
+    .msg {
+        margin-right: 0;  
+    }
+
+    .profile {
+        width: 60vw;  
+    }
+}
+
+
+   
+@media (max-width: 895px) {
+    .navbar {
+        width: 15vw;  
+    }
+
+    .msg {
+        margin-right: 0;  
+        margin-left: 2rem;
+    }
+
+    .profile {
+        width: 80vw;  
+      
+    }
+}
+
+@media (max-width: 895px) {
+    .navbar {
+        width: 15vw;  
+    }
+
+    .msg {
+        margin-right: 0;  
+        margin-left: .2rem;
+    }
+
+    .profile {
+        width: 85vw; 
+        
+      
+    }
+}
+
+@media (max-width: 495px) {
+    .navbar {
+        display: none;  
+    }
+
+    .msg {
+        margin-right: 0;  
+        margin-left: 0;  
+        
+    }
+
+    .profile {
+        width: 100vw; 
+        padding: 0;
+        margin-left: 0;  
+        
+    }
+
+    .notification-container {
+        padding: 1rem; 
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        bottom: 0;
+        color: black;
+        left: 0;
+        padding: .2rem 0; 
+        border-top: 0.1rem solid grey; 
+        background-color: #fff;
+        z-index: 2000; 
+        width: 100%;
+        height: 3rem;
+    }
+
+    .footer-nav nav {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1.3rem;  
+    }
+    
+    .footer-nav nav a {
+        margin-right: 1rem;
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        margin-top: .6rem;
+    }
+    
+    .footer-nav nav a:last-child {
+        margin-right: 0;
+    }
+    
+    .footer-nav nav img {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        vertical-align: middle;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 365px){
+    .msg{
+        width: 100%;
+    }
+    .profile{
+        width: 100%;
+    }
+    .notification-container{
+        width: 100%;
+    }
+}
+
+
+</style>
+</body>
+</html>

@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+.navbar {
+    width: 9.3vw;
+    height: 100vh;
+    padding: .5rem;
+    border-right: .1rem solid gray;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-right: 2rem;
+     
+}
+
+.navbar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: .5rem;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: black;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav a img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+     
+}
+
+.navbar nav a i {
+    font-size: 1.7rem;
+}
+
+.navbar nav .logo {
+    margin-bottom: 2rem;
+}
+
+.navbar nav .menu {
+    margin-top: 2rem;
+     
+}
+
+.profile {
+    width: 24vw;  
+    padding: .5rem;
+    margin-left: 8vw; 
+    display: flex;
+    position: relative;   
+    justify-content: space-between;
+    scroll-behavior: smooth;
+    border-right: .1rem solid gray;
+}
+ 
+.profile .user {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 2rem;
+     margin-bottom: 1rem;
+     font-weight: 700;
+}
+
+.user .edit {
+    display: flex;
+     align-items: center;
+     margin-left: 12rem;
+
+}
+
+.user .edit i{
+    font-size: 1.3rem;
+}
+
+.profile {
+    width: 25vw;  
+    padding: 1rem;
+    position: absolute;
+    margin-left: 10vw;  
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;
+    scroll-behavior: smooth;
+    border-right: .1rem solid gray;
+}
+ 
+ 
+.profile .heading {
+    display: flex;
+     justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 100%;
+    border-bottom: .1rem solid grey;
+    
+}
+
+.profile .heading p {
+    color: gray;
+    margin-bottom: 0; 
+}
+
+.profile .heading .present {
+    font-weight: bold;  
+    color: black;
+    margin-right: 0;
+   border-bottom: .2rem solid gray;
+}
+
+
+
+.profile .msg-users-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    
+}
+
+.user-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+
+.user-1 img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.user-1 .content {
+    flex: 1;
+}
+
+.user-1 .content h3 {
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.user-1 .content p {
+    color: gray;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+
+.user-1 .content .close{
+    font-weight: bold;
+    color: black;
+}
+ 
+
+
+.right-side {
+    width: 65vw;  
+    margin-left: 35vw;  
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.right-side a {
+    font-size: 3rem;
+    background: white;
+    border: .1rem solid black;
+    border-radius: 100%;
+    padding: 1rem;
+    color: black;
+     
+}
+
+.right-side h5 {
+    font-size: .8rem;
+    margin-top: 1rem;
+}
+
+.right-side p {
+    color: gray;
+    margin-top: .6rem;
+    font-size: .9rem;
+}
+
+.right-side button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #00BFFF;
+    border: none;
+    border-radius: 0.5rem;
+     margin-top: 1rem;
+    cursor: pointer;
+}
+
+
+@media (max-width:1080px) {
+   .profile {
+        width: 35%;
+   }
+
+   .profile .user .edit{
+     margin-left: 2rem;
+   }
+}
+
+@media   (max-width: 900px) {
+
+     .profile {
+        width: 40%;
+        margin-left: 5rem;
+        height: 100vh;
+        border-right: none;
+        border-right: .1rem solid gray;
+     }
+
+    .right-side{
+        width: 80%;
+        overflow: hidden;
+        
+    }   
+    
+    .profile {
+        margin-left: 7rem;
+        padding: .5rem; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+     
+
+  .profile{
+    width: 45%;
+    border-right: .1rem solid gray;
+    margin-left: 5rem;
+  }
+    
+  .right-side{
+    display: none;
+  }
+     
+    
+}
+
+@media   (max-width: 595px) {
+    .profile{
+        width: 60%;
+        border-right: .1rem solid gray;
+        margin-left: 5rem;
+      }
+
+     .navbar{
+        padding-left: 2rem;
+     } 
+}
+
+@media  (max-width: 495px) {
+    .profile{
+        width: 76%;
+        border-right: none;
+        margin-left: .6rem;
+      }
+
+     .navbar{
+        display: none;
+     } 
+}
+
+ 
+
+      
+    
+
